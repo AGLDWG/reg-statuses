@@ -7,6 +7,13 @@
 @prefix : <http://linked.data.gov.au/def/status/> .
 
 
+<http://linked.data.gov.au/def/status> a owl:Ontology ;
+    rdfs:label "Status Vocabulary"@en ;
+    rdfs:comment """This vocabulary is a re-publication of the Registry Ontology's (href="http://epimorphics.com/public/vocabulary/Registry.html) *Status* vocabulary (online in RDF: http://purl.org/linked-data/registry). This re-publication has been performed to allow for the URIs of each vocab term (skos:Concept) to resolve to both human-readable and machine-readable forms (HTML and RDF, respectively) using HTTP content negotiation.
+
+    Note that just like the original form of this vocabulary, while it is a SKOS vocabulary implemented as a single skos:ConceptScheme, it is also an OWL Ontology and that each *Status* is both a skos:Concept and a reg:Status individual."""@en ;
+.
+
 reg:Status    a owl:Class;
     rdfs:label "Status"@en;
     rdfs:comment "Open set of status code for entries in a register"@en;
