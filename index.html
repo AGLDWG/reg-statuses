@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registry Ontology's Status vocabuary</title>
+    <meta charset="utf-8" />
+    <link rel="schema.dcterms" href="http://purl.org/dc/terms/" />
+    <meta name="dcterms.format" content="text/html" />
+    <meta name="dcterms.language" content="en" />
+    <meta name="dcterms.type" content="Text" />
+    <meta name="dcterms.publisher" content="Australian Government Linked Data Working Group" />
+    <meta name="dcterms.contributor" content="Nicholas Car" />
+    <meta name="dcterms.title" content="Registry Ontology's Status vocabulary" />
+    <meta name="dcterms.date" content="2018-07-20T20:30+10:00" />
+    <meta name="dcterms.modified" content="2018-07-20T14:30+10:00" />
+    <meta name="description" content="The Registry Ontology's status vocabulary re-published by Australian Government Linked Data Working Group to allow for URI conneg (HTML & RDF)" />
+    <meta name="generator" content="Lovingly coded by hand" />
+
+    <link type="text/css" rel="stylesheet" href="http://linked.data.gov.au/static/css/ochre.css" media="all" />
+</head>
+<body>
+    <header style="text-align:right; padding-top:10px;">
+        <div style="width:150px; height:150px; float:left;">
+            <img src="http://linked.data.gov.au/static/img/agldwg-logo-ochre-150.png" alt="AGLDWG logo" />
+        </div>
+        <div id="nav">
+            <a href="http://linked.data.gov.au">AGLDWG Home</a> |
+            <a href="http://linked.data.gov.au/contact.html">Contact</a>
+        </div>
+    </header>
+
+    <div id="main" style="clear:both;">
+
+        <div id="alt" style="float:right; display:block; background-color: #efefef; padding: 5px;">
+            <h3>Alternate views</h3>
+            <p>See this vocab in other formats:</p>
+            <ul><li><a href="http://test.linked.data.gov.au/def/status/?_format=text/turtle">RDF (turtle)</a></li></ul>
+        </div>
+
+        <h1>Status Vocabulary</h1>
+
+        <div id="intro">
+            <p>This vocabulary is a re-publication of the <a href="http://epimorphics.com/public/vocabulary/Registry.html">Registry Ontology's</a> <em>Status</em> vocabulary (online <a href="http://purl.org/linked-data/registry"> in RDF)</a>. This re-publication has been performed to allow for the URIs of each vocab term (<code><a href="http://www.w3.org/2008/05/skos#Concept">skos:Concept</a></code>) to resolve to both human-readable and machine-readable forms (HTML and RDF, respectively) using HTTP content negotiation.</p>
+            <p>Note that just like the original form of this vocabulary, while it is a <a href="https://www.w3.org/2008/05/skos">SKOS</a> vocabulary implemented as a single <a href="http://www.w3.org/2008/05/skos#ConceptScheme">Concept Scheme</a>, it is also an <a href="https://www.w3.org/TR/owl2-overview/">OWL Ontology</a> and that each <em>Status</em> is both a <code><a href="http://www.w3.org/2008/05/skos#Concept">skos:Concept</a></code> and a <code><a href="http://purl.org/linked-data/registry#Status">reg:Status</a></code>.</p>
+        </div>
+
+        <div id="conceptScheme">
+            <h2>Concept Scheme</h2>
+            <table class="concept_scheme alternating">
+                <tr>
+                    <th>Name</th>
+                    <td>Status</td>
+                </tr>
+                <tr>
+                    <th>URI</th><td><code>http://test.linked.data.gov.au/def/status/StatusScheme</code></td>
+                </tr>
+                <tr>
+                    <th>Contributor</th><td><a href="http://orcid.org/0000-0002-8742-7730">0000-0002-8742-7730</a></td>
+                </tr>
+                <tr>
+                    <th>Publisher</th><td><a href="http://linked.data.gov.au">Australian Government Linked Data Working Group</a></td>
+                </tr>
+                <tr>
+                    <th>Issued</th><td>22 July 2018</td>
+                </tr>
+                <tr>
+                    <th>Concepts</th>
+                    <td class="list">
+                        <ul>
+                            <li>
+                                <a href="http://test.linked.data.gov.au/def/status/Accepted">Accepted</a>
+                                <ul>
+                                    <li>
+                                        <a href="http://test.linked.data.gov.au/def/status/Deprecated">Deprecated</a>
+                                        <ul>
+                                            <li><a href="http://test.linked.data.gov.au/def/status/Retired">Retired</a></li>
+                                            <li><a href="http://test.linked.data.gov.au/def/status/Superseded">Superseded</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="http://test.linked.data.gov.au/def/status/Valid">Valid</a>
+                                        <ul>
+                                            <li><a href="http://test.linked.data.gov.au/def/status/Experimental">Experimental</a></li>
+                                            <li><a href="http://test.linked.data.gov.au/def/status/Stable">Stable</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="http://test.linked.data.gov.au/def/status/NotAccepted">Not Accepted</a>
+                                <ul>
+                                    <li><a href="http://test.linked.data.gov.au/def/status/Invalid">Invalid</a></li>
+                                    <li><a href="http://test.linked.data.gov.au/def/status/Reserved">Reserved</a></li>
+                                    <li><a href="http://test.linked.data.gov.au/def/status/Submitted">Submitted</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="allConcepts">
+            <h2>Collection: All Concepts</h2>
+            <table class="collection alternating">
+                <tr>
+                    <th>URI</th><td><code>http://test.linked.data.gov.au/def/status/allConcepts</code></td>
+                </tr>
+                <tr>
+                    <th>Members</th>
+                    <td class="list">
+                        <a href="http://test.linked.data.gov.au/def/status/Accepted">Accepted</a><br />
+                        <a href="http://test.linked.data.gov.au/def/status/Deprecated">Deprecated</a><br />
+                        <a href="http://test.linked.data.gov.au/def/status/Retired">Retired</a><br />
+                        <a href="http://test.linked.data.gov.au/def/status/Superseded">Superseded</a><br />
+                        <a href="http://test.linked.data.gov.au/def/status/Valid">Valid</a><br />
+                        <a href="http://test.linked.data.gov.au/def/status/Experimental">Experimental</a><br />
+                        <a href="http://test.linked.data.gov.au/def/status/Stable">Stable</a><br />
+                        <a href="http://test.linked.data.gov.au/def/status/NotAccepted">Not Accepted</a><br />
+                        <a href="http://test.linked.data.gov.au/def/status/Invalid">Invalid</a><br />
+                        <a href="http://test.linked.data.gov.au/def/status/Reserved">Reserved</a><br />
+                        <a href="http://test.linked.data.gov.au/def/status/Submitted">Submitted</a><br />
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div> <!-- main -->
+
+    <footer>
+        <div id="footer_content">
+            <div id="license">
+                <img src="https://toolkit.data.gov.au/skins/common/images/cc-by.png" alt="CC-BY 4.0 Australia exception of the Commonwealth Coat of Arms" width="88" height="31">
+                This web page content is licensed under a <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>
+            </div>
+            <div style="float:right; width:49%; text-align:right;"></div>
+            <div style="clear:both;">&nbsp;</div>
+        </div>
+    </footer><!-- footer -->
+</body>
+</html>                                                                                                                                                                                                                                                                                                                                         
