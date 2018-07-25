@@ -1,5 +1,6 @@
-RewriteCond %{HTTP_ACCEPT} ^.*text/html.*
-RewriteRule ^/([a-z0-9]+)$ /$1.html [R=303,L]
-
+RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteCond %{HTTP:Accept} text/turtle [NC]
 RewriteRule ^/([a-z0-9]+)$ /$1.ttl [R=303,L]
+
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+)$ $1.html [L,QSA]
