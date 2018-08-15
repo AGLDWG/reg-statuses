@@ -4,7 +4,7 @@
 
 This vocabulary is onlike at:
 
-* <http://linked.data.gov.au/def/status>
+* <http://linked.data.gov.au/def/reg-status>
 
 ## License
 This repository is licensed under Creative Commons 4.0 International. See the [LICENSE deed](LICENSE) in this repository for details.

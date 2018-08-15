@@ -4,7 +4,7 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix reg:  <http://purl.org/linked-data/registry#> .
-@prefix : <http://linked.data.gov.au/def/status/> .
+@prefix : <linked.data.gov.au/def/reg-status> .
 
 
 :stable a skos:Concept, reg:Status;
