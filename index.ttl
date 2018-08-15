@@ -7,11 +7,23 @@
 @prefix : <linked.data.gov.au/def/reg-status> .
 
 
-<http://linked.data.gov.au/def/status> a owl:Ontology ;
-    rdfs:label "Status Vocabulary"@en ;
-    rdfs:comment """This vocabulary is a re-publication of the Registry Ontology's (href="http://epimorphics.com/public/vocabulary/Registry.html) *Status* vocabulary (online in RDF: http://purl.org/linked-data/registry). This re-publication has been performed to allow for the URIs of each vocab term (skos:Concept) to resolve to both human-readable and machine-readable forms (HTML and RDF, respectively) using HTTP content negotiation.
+<http://linked.data.gov.au/def/reg-status> a owl:Ontology ;
+    rdfs:label "Registry Status Vocabulary"@en ;
+    rdfs:comment """This vocabulary is a re-publication of the Registry Ontology's (http://epimorphics.com/public/vocabulary/Registry.html) *Status* vocabulary (online in RDF: http://purl.org/linked-data/registry). This re-publication has been performed to allow for the URIs of each vocab term (skos:Concept) to resolve to both human-readable and machine-readable forms (HTML and RDF, respectively) using HTTP content negotiation.
 
     Note that just like the original form of this vocabulary, while it is a SKOS vocabulary implemented as a single skos:ConceptScheme, it is also an OWL Ontology and that each *Status* is both a skos:Concept and a reg:Status individual."""@en ;
+
+    owl:versionIRI <http://linked.data.gov.au/def/reg-status/1.0> ;
+    owl:versionInfo "1.0"@en ;
+    dc:contributor "Nicholas Car"@en ;
+    vann:preferredNamespaceUri "hhttp://linked.data.gov.au/def/reg-status"^^xsd:string ;
+    dc:creator "Epimorphics"@en ;
+    vann:preferredNamespacePrefix "reg-status"@en ;
+    dc:publisher "Australian Government Linked Data Working Group"@en ;
+    rdfs:seeAlso <https://github.com/AGLDWG/reg-status> ;
+    dcterms:modified "2018-08-15"@en ;
+    dcterms:rights "(c) Commonwealth of Australia 2018"@en ;
+    dcterms:created "2018-07-23"^^xsd:date ;
 .
 
 reg:Status    a owl:Class;
