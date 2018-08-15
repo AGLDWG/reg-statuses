@@ -9,10 +9,9 @@
 
 <http://linked.data.gov.au/def/reg-status> a owl:Ontology ;
     rdfs:label "Registry Status Vocabulary"@en ;
-    rdfs:comment """This vocabulary is a re-publication of the Registry Ontology's (http://epimorphics.com/public/vocabulary/Registry.html) *Status* vocabulary (online in RDF: http://purl.org/linked-data/registry). This re-publication has been performed to allow for the URIs of each vocab term (skos:Concept) to resolve to both human-readable and machine-readable forms (HTML and RDF, respectively) using HTTP content negotiation.
+    rdfs:comment """This vocabulary is a re-published and essentially unchanged version of the Registry Ontology's (http://epimorphics.com/public/vocabulary/Registry.html) *Status* vocabulary (online in RDF: http://purl.org/linked-data/registry). This re-publication has been performed to allow for the URIs of each vocab term (skos:Concept) to resolve to both human-readable and machine-readable forms (HTML and RDF, respectively) using HTTP content negotiation.
 
     Note that just like the original form of this vocabulary, while it is a SKOS vocabulary implemented as a single skos:ConceptScheme, it is also an OWL Ontology and that each *Status* is both a skos:Concept and a reg:Status individual."""@en ;
-
     owl:versionIRI <http://linked.data.gov.au/def/reg-status/1.0> ;
     owl:versionInfo "1.0"@en ;
     dc:contributor "Nicholas Car"@en ;
@@ -41,7 +40,7 @@ reg:Status    a owl:Class;
 :allConcepts a skos:Collection ;
     rdfs:label "All Concepts"@en;
     skos:member
-        :accepted , 
+        :accepted ,
         :deprecated ,
         :experimental ,
         :invalid ,
