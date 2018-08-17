@@ -1,15 +1,14 @@
+AddType 'text/turtle' .ttl
+
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteCond %{HTTP:Accept} text/turtle [NC]
-Header set Content-Type "text/turtle"
 RewriteRule ^/([a-z0-9]+)$ /$1.ttl [R=302,L]
 
 RewriteCond %{QUERY_STRING} ^_format=text/turtle$
 RewriteRule .* index.ttl
-Header set Content-Type "text/turtle"
 
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^(.+)$ $1.html [L,QSA]
 
 # whole vocab in RDF, after all more specific matches
 RewriteRule .ttl$ index.ttl [L,QSA]
-Header set Content-Type "text/turtle"
