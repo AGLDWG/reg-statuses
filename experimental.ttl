@@ -1,7 +1,4 @@
-@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
-@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix reg:  <http://purl.org/linked-data/registry#> .
 @prefix : <http://linked.data.gov.au/def/reg-status/> .
@@ -10,8 +7,8 @@
 :experimental a skos:Concept, reg:Status;
     skos:prefLabel "experimental"@en;
     skos:altlabel "provisional"@en;
-    rdfs:comment "An entry that has been accepted into the register temporarily and may be subject to change or withdrawal."@en;
+    skos:definition "An entry that has been accepted into the register temporarily and may be subject to change or withdrawal."@en;
     skos:inScheme :statusScheme;
     skos:broader  :valid;
-    owl:sameAs reg:statusAccepted ;
+    owl:sameAs reg:statusExperimental ;
 .

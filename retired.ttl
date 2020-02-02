@@ -1,7 +1,4 @@
-@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
-@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix reg:  <http://purl.org/linked-data/registry#> .
 @prefix : <http://linked.data.gov.au/def/reg-status/> .
@@ -10,8 +7,8 @@
 :retired a skos:Concept, reg:Status;
     skos:prefLabel "retired"@en;
     skos:altlabel "withdrawn"@en;
-    rdfs:comment "An entry that has been withdrawn from use. Corresponds to ISO 19135:2005 'retired'."@en;
+    skos:definition "An entry that has been withdrawn from use. Corresponds to ISO 19135:2005 'retired'."@en;
     skos:inScheme :statusScheme;
     skos:broader  :deprecated;
-    owl:sameAs reg:statusAccepted ;
+    owl:sameAs reg:statusRetired ;
 .
