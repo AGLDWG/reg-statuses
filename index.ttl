@@ -5,32 +5,36 @@
 @prefix sdo: <https://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix reg:  <http://purl.org/linked-data/registry#> .
-@prefix dct:  <http://purl.org/dc/terms/> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix : <http://linked.data.gov.au/def/reg-status/> .
 
 
-<http://linked.data.gov.au/def/reg-status> a owl:Ontology ;
+: a owl:Ontology , skos:ConceptScheme;
     skos:prefLabel "Registry Status Vocabulary"@en ;
     skos:definition """This vocabulary is a re-published and essentially unchanged version of the Registry Ontology's (http://epimorphics.com/public/vocabulary/Registry.html) *Status* vocabulary (online in RDF: http://purl.org/linked-data/registry). This re-publication has been performed to allow for the URIs of each vocab term (skos:Concept) to resolve to both human-readable and machine-readable forms (HTML and RDF, respectively) using HTTP content negotiation.
 
     Note that just like the original form of this vocabulary, while it is a SKOS vocabulary implemented as a single skos:ConceptScheme, it is also an OWL Ontology and that each *Status* is both a skos:Concept and a reg:Status individual."""@en ;
     owl:versionIRI <http://linked.data.gov.au/def/reg-status/1.0> ;
     owl:versionInfo "1.0"@en ;
-    dct:contributor <https://orcid.org/0000-0002-8742-7730>;
+    dcterms:contributor <https://orcid.org/0000-0002-8742-7730>;
     vann:preferredNamespaceUri "http://linked.data.gov.au/def/reg-status"^^xsd:string ;
-    dct:creator <https://www.epimorphics.com> ;
+    dcterms:creator <https://www.epimorphics.com> ;
     vann:preferredNamespacePrefix "reg-status"@en ;
-    dct:publisher <http://linked.data.gov.au/org/agldwg> ;
+    dcterms:publisher <http://linked.data.gov.au/org/agldwg> ;
     rdfs:seeAlso <https://github.com/AGLDWG/reg-status> ;
-    dct:modified "2018-08-15"@en ;
-    dct:rights "(c) Commonwealth of Australia 2020"@en ;
-    dct:created "2018-07-23"^^xsd:date ;
+    dcterms:modified "2020-06-27"^^xsd:date ;
+    skos:changeNote "2020-06-27 NJC altered structure & metadata, not content, to conform to Vocab Publication Profile" ;
+    dcterms:rights "(c) Commonwealth of Australia 2020"@en ;
+    dcterms:created "2018-07-23"^^xsd:date ;
+    dcterms:source <http://purl.org/linked-data/registry> ;
+    skos:hasTopConcept :accepted , :notAccepted ;
 .
 
 <https://www.epimorphics.com>
     a sdo:Organization ;
     sdo:name "Epimorphics" ;
+    sdo:url <https://www.epimorphics.com> ;
 .
 
 <http://linked.data.gov.au/def/agldwg>
@@ -50,22 +54,18 @@
 <https://surroundaustralia.com>
     a sdo:Organization ;
     sdo:name "SURROUND Australia Pty Ltd" ;
+    sdo:url <https://surroundaustralia.com> ;
 .
 
-reg:Status    a owl:Class;
+reg:Status a owl:Class;
     skos:prefLabel "Status"@en;
     skos:definition "Open set of status code for entries in a register"@en;
     rdfs:subClassOf skos:Concept;
 .
 
-:statusScheme a skos:ConceptScheme;
-    skos:prefLabel "Status Scheme"@en;
-    skos:definition "Concept scheme containing registry status codes"@en;
-    skos:hasTopConcept :accepted , :notAccepted ;
-.
-
 :allConcepts a skos:Collection ;
     skos:prefLabel "All Concepts"@en;
+    skos:definition "All the Concepts in this vocabulary"@en;
     skos:member
         :accepted ,
         :deprecated ,
@@ -78,19 +78,25 @@ reg:Status    a owl:Class;
         :submitted ,
         :superseded ,
         :valid ;
+    skos:inScheme : ;
+    rdfs:isDefinedBy : ;
+    dcterms:provenance "This vocbaulary"@en ;
 .
 
 :accepted a skos:Concept, reg:Status;
     skos:prefLabel "accepted"@en;
     skos:definition "An entry that has been accepted for use and is visible in the default register listing. Includes entries that have seen been retired or superseded."@en;
-    skos:topConceptOf :statusScheme;
+    skos:topConceptOf : ;
     owl:sameAs reg:statusAccepted ;
+    skos:inScheme : ;
+    rdfs:isDefinedBy : ;
 .
 
 :deprecated a skos:Concept, reg:Status;
     skos:prefLabel "deprecated"@en;
     skos:definition "An entry that has been retired or replaced and is no longer to be used."@en;
-    skos:inScheme :statusScheme;
+    skos:inScheme : ;
+    rdfs:isDefinedBy : ;
     skos:broader  :accepted;
     owl:sameAs reg:statusDeprecated ;
 .
@@ -99,7 +105,8 @@ reg:Status    a owl:Class;
     skos:prefLabel "experimental"@en;
     skos:altlabel "provisional"@en;
     skos:definition "An entry that has been accepted into the register temporarily and may be subject to change or withdrawal."@en;
-    skos:inScheme :statusScheme;
+    skos:inScheme : ;
+    rdfs:isDefinedBy : ;
     skos:broader  :valid;
     owl:sameAs reg:statusExperimental ;
 .
@@ -107,7 +114,8 @@ reg:Status    a owl:Class;
 :invalid a skos:Concept, reg:Status;
     skos:prefLabel "invalid"@en;
     skos:definition "An entry which has been invalidated due to serious flaws, distinct from retrirement. Corresponds to ISO 19135(redraft) 'invalid'"@en;
-    skos:inScheme :statusScheme;
+    skos:inScheme : ;
+    rdfs:isDefinedBy : ;
     skos:broader  :notAccepted;
     owl:sameAs reg:statusInvalid ;
 .
@@ -115,14 +123,17 @@ reg:Status    a owl:Class;
 :notAccepted a skos:Concept, reg:Status;
     skos:prefLabel "notAccepted"@en;
     skos:definition "An entry that should not be visible in the default register listing. Corresponds to ISO 19135:2005 'notValid'"@en;
-    skos:topConceptOf :statusScheme;
+    skos:topConceptOf : ;
     owl:sameAs reg:statusNotAccepted ;
+    skos:inScheme : ;
+    rdfs:isDefinedBy : ;
 .
 
 :reserved a skos:Concept, reg:Status;
     skos:prefLabel "reserved"@en;
     skos:definition "A reserved entry allocated for some as yet undetermined future use."@en;
-    skos:inScheme :statusScheme;
+    skos:inScheme : ;
+    rdfs:isDefinedBy : ;
     skos:broader  :notAccepted;
     owl:sameAs reg:statusReserved ;
 .
@@ -131,7 +142,8 @@ reg:Status    a owl:Class;
     skos:prefLabel "retired"@en;
     skos:altlabel "withdrawn"@en;
     skos:definition "An entry that has been withdrawn from use.  Corresponds to ISO 19135:2005 'retired'"@en;
-    skos:inScheme :statusScheme;
+    skos:inScheme : ;
+    rdfs:isDefinedBy : ;
     skos:broader  :deprecated;
     owl:sameAs reg:statusRetired ;
 .
@@ -139,7 +151,8 @@ reg:Status    a owl:Class;
 :stable a skos:Concept, reg:Status;
     skos:prefLabel "stable"@en;
     skos:definition "An entry that is seen as having a reasonable measure of stability, may be used to mark the full adoption of a previously 'experimental' entry."@en;
-    skos:inScheme :statusScheme;
+    skos:inScheme : ;
+    rdfs:isDefinedBy : ;
     skos:broader  :valid;
     owl:sameAs reg:statusStable ;
 .
@@ -147,7 +160,8 @@ reg:Status    a owl:Class;
 :submitted a skos:Concept, reg:Status;
     skos:prefLabel "submitted"@en;
     skos:definition "A proposed entry which is not yet approved for use for use. Corresponds to ISO 19135:(redraft) 'submitted'"@en;
-    skos:inScheme :statusScheme;
+    skos:inScheme : ;
+    rdfs:isDefinedBy : ;
     skos:broader  :notAccepted;
     owl:sameAs reg:statusSubmitted ;
 .
@@ -156,7 +170,8 @@ reg:Status    a owl:Class;
     skos:prefLabel "superseded"@en;
     skos:altlabel "replaced"@en;
     skos:definition "An entry that has been replaced by a new alternative which should be used instead.  Corresponds to ISO 19135:2005 'superseded'."@en;
-    skos:inScheme :statusScheme;
+    skos:inScheme : ;
+    rdfs:isDefinedBy : ;
     skos:broader  :deprecated;
     owl:sameAs reg:statusSuperceded ;
 .
@@ -164,7 +179,8 @@ reg:Status    a owl:Class;
 :valid a skos:Concept, reg:Status;
     skos:prefLabel "valid"@en;
     skos:definition "An entry that has been accepted into the register and is deemed fit for use. Corresponds to ISO 19135:2005 'valid'."@en;
-    skos:inScheme :statusScheme;
+    skos:inScheme : ;
+    rdfs:isDefinedBy : ;
     skos:broader  :accepted;
     owl:sameAs reg:statusValid ;
 .
