@@ -104,7 +104,7 @@ reg:RegisterItem    a owl:Class;
     rdfs:subClassOf [owl:onProperty dct:description;   owl:minCardinality 0];
     rdfs:subClassOf [owl:onProperty dct:dateSubmitted; owl:cardinality    1];
     rdfs:subClassOf [owl:onProperty dct:dateAccepted;  owl:maxCardinality 1];
-    rdfs:subClassOf [owl:onProperty reg:status;        owl:minCardinality 1];
+    rdfs:subClassOf [owl:onProperty reg:Status ;        owl:minCardinality 1];
     rdfs:subClassOf [owl:onProperty reg:definition;    owl:cardinality    1];
     rdfs:subClassOf [owl:onProperty reg:submitter;     owl:cardinality    1];
     rdfs:subClassOf [owl:onProperty reg:category;      owl:minCardinality 0];
@@ -192,7 +192,7 @@ reg:status    a owl:ObjectProperty;
     rdfs:label "status"@en;
     skos:definition "The status of this register entry"@en;
     rdfs:domain reg:RegisterItem;
-    rdfs:range  reg:Status;
+    rdfs:range  reg:Status ;
     .
 
 reg:Status    a owl:Class;
@@ -206,81 +206,81 @@ reg:StatusScheme a skos:ConceptScheme;
     skos:definition "Concept scheme containing registry status codes"@en;
     .
 
-reg:statusNotAccepted a skos:Concept, reg:Status;
+reg:statusNotAccepted a skos:Concept, reg:Status ;
     skos:prefLabel "notAccepted"@en;
     skos:definition "An entry that should not be visible in the default register listing. Corresponds to ISO 19135:2005 'notValid'"@en;
-    skos:topConceptOf reg:StatusScheme;
+    skos:topConceptOf regcs: ;
     .
 
-reg:statusSubmitted a skos:Concept, reg:Status;
+reg:statusSubmitted a skos:Concept, reg:Status ;
     skos:prefLabel "submitted"@en;
     skos:definition "A proposed entry which is not yet approved for use for use. Corresponds to ISO 19135:(redraft) 'submitted'"@en;
-    skos:inScheme reg:StatusScheme;
+    skos:inScheme regcs: ;
     skos:broader  reg:statusNotAccepted;
     .
 
-reg:statusReserved a skos:Concept, reg:Status;
+reg:statusReserved a skos:Concept, reg:Status ;
     skos:prefLabel "reserved"@en;
     skos:definition "A reserved entry allocated for some as yet undetermined future use."@en;
-    skos:inScheme reg:StatusScheme;
+    skos:inScheme regcs: ;
     skos:broader  reg:statusNotAccepted;
     .
 
-reg:statusInvalid a skos:Concept, reg:Status;
+reg:statusInvalid a skos:Concept, reg:Status ;
     skos:prefLabel "invalid"@en;
     skos:definition "An entry which has been invalidated due to serious flaws, distinct from retrirement. Corresponds to ISO 19135(redraft) 'invalid'"@en;
-    skos:inScheme reg:StatusScheme;
+    skos:inScheme regcs: ;
     skos:broader  reg:statusNotAccepted;
     .
 
-reg:statusAccepted a skos:Concept, reg:Status;
+reg:statusAccepted a skos:Concept, reg:Status ;
     skos:prefLabel "accepted"@en;
     skos:definition "An entry that has been accepted for use and is visible in the default register listing. Includes entries that have seen been retired or superseded."@en;
-    skos:topConceptOf reg:StatusScheme;
+    skos:topConceptOf regcs: ;
     .
 
-reg:statusValid a skos:Concept, reg:Status;
+reg:statusValid a skos:Concept, reg:Status ;
     skos:prefLabel "valid"@en;
     skos:definition "An entry that has been accepted into the register and is deemed fit for use. Corresponds to ISO 19135:2005 'valid'."@en;
-    skos:inScheme reg:StatusScheme;
+    skos:inScheme regcs: ;
     skos:broader  reg:statusAccepted;
     .
 
-reg:statusExperimental a skos:Concept, reg:Status;
+reg:statusExperimental a skos:Concept, reg:Status ;
     skos:prefLabel "experimental"@en;
     skos:altlabel "provisional"@en;
     skos:definition "An entry that has been accepted into the register temporarily and may be subject to change or withdrawal."@en;
-    skos:inScheme reg:StatusScheme;
+    skos:inScheme regcs: ;
     skos:broader  reg:statusValid;
     .
 
-reg:statusStable a skos:Concept, reg:Status;
+reg:statusStable a skos:Concept, reg:Status ;
     skos:prefLabel "stable"@en;
     skos:definition "An entry that is seen as having a reasonable measure of stability, may be used to mark the full adoption of a previously 'experimental' entry."@en;
-    skos:inScheme reg:StatusScheme;
+    skos:inScheme regcs: ;
     skos:broader  reg:statusValid;
     .
 
-reg:statusDeprecated a skos:Concept, reg:Status;
+reg:statusDeprecated a skos:Concept, reg:Status ;
     skos:prefLabel "deprecated"@en;
     skos:definition "An entry that has been retired or replaced and is no longer to be used."@en;
-    skos:inScheme reg:StatusScheme;
+    skos:inScheme regcs: ;
     skos:broader  reg:statusAccepted;
     .
 
-reg:statusSuperseded a skos:Concept, reg:Status;
+reg:statusSuperseded a skos:Concept, reg:Status ;
     skos:prefLabel "superseded"@en;
     skos:altlabel "replaced"@en;
     skos:definition "An entry that has been replaced by a new alternative which should be used instead.  Corresponds to ISO 19135:2005 'superseded'."@en;
-    skos:inScheme reg:StatusScheme;
+    skos:inScheme regcs: ;
     skos:broader  reg:statusDeprecated;
     .
 
-reg:statusRetired a skos:Concept, reg:Status;
+reg:statusRetired a skos:Concept, reg:Status ;
     skos:prefLabel "retired"@en;
     skos:altlabel "withdrawn"@en;
     skos:definition "An entry that has been withdrawn from use.  Corresponds to ISO 19135:2005 'retired'"@en;
-    skos:inScheme reg:StatusScheme;
+    skos:inScheme regcs: ;
     skos:broader  reg:statusDeprecated;
     .
 
@@ -290,21 +290,21 @@ reg:statusRetired a skos:Concept, reg:Status;
 reg:nextState a owl:DatatypeProperty;
     rdfs:label "next state"@en;
     skos:definition "Gives the label of a state which can follow from this state"@en;
-    rdfs:domain reg:Status;
+    rdfs:domain reg:Status ;
     rdfs:range xsd:string;
     .
 
 reg:priorState a owl:DatatypeProperty;
     rdfs:label "next state"@en;
     skos:definition "Gives the label of a state which can precede this state"@en;
-    rdfs:domain reg:Status;
+    rdfs:domain reg:Status ;
     rdfs:range xsd:string;
     .
 
 reg:presentation a owl:DatatypeProperty;
     rdfs:label "presentation"@en;
     skos:definition "Presentational hint for showing items with this status"@en;
-    rdfs:domain reg:Status;
+    rdfs:domain reg:Status ;
     rdfs:range xsd:string;
     .
 

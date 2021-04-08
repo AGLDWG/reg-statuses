@@ -1,13 +1,15 @@
+@prefix cs: <https://linked.data.gov.au/def/reg-status/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix reg:  <http://purl.org/linked-data/registry#> .
-@prefix : <http://linked.data.gov.au/def/reg-status/> .
+@prefix : <https://linked.data.gov.au/def/reg-status/> .
 
 
-:invalid a skos:Concept, reg:Status;
+:invalid a skos:Concept, reg:Status ;
+    rdfs:isDefinedBy cs: ;
     skos:prefLabel "invalid"@en;
     skos:definition "An entry which has been invalidated due to serious flaws, distinct from retrirement. Corresponds to ISO 19135(redraft) 'invalid'."@en;
-    skos:inScheme :statusScheme;
+    skos:inScheme cs: ;
     skos:broader  :notAccepted;
     owl:sameAs reg:statusInvalid ;
 .

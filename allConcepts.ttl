@@ -1,8 +1,10 @@
+@prefix cs: <https://linked.data.gov.au/def/reg-status/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix : <http://linked.data.gov.au/def/reg-status/> .
+@prefix : <https://linked.data.gov.au/def/reg-status/> .
 
 
 :allConcepts a skos:Collection ;
+    rdfs:isDefinedBy cs: ;
     skos:prefLabel "All Concepts"@en;
     skos:definition "All Concepts within the status scheme."@en ;
     skos:member

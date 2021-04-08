@@ -4,14 +4,14 @@
 
 This vocabulary is onlike at:
 
-* <http://linked.data.gov.au/def/reg-status>
+* <https://linked.data.gov.au/def/reg-status>
 
 ## License
 This repository is licensed under Creative Commons 4.0 International. See the [LICENSE deed](LICENSE) in this repository for details.
 
 ## Contacts
 Contributor:  
-**Nicholas Car**  
-*Senior Experimental Scientist*  
-CSIRO Land & Water  
-<nicholas.car@csiro.au>  
+**Nicholas J. Car**  
+*Data Systems Architect*  
+SURROUND Australia Pty Ltd.  
+<nicholas.car@surroundaustralia.com>  
