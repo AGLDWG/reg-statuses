@@ -14,7 +14,7 @@ permalink: /.ttl
 @prefix : <https://linked.data.gov.au/def/reg-statuses/> .
 
 
-cs: 
+<https://linked.data.gov.au/def/reg-statuses>
     a owl:Ontology , skos:ConceptScheme;
     skos:prefLabel "Registry Status Vocabulary"@en ;
     skos:definition """This vocabulary is a re-published and only marginally changed version of the Registry Ontology's (http://epimorphics.com/public/vocabulary/Registry.html) *Status* vocabulary (online in RDF: http://purl.org/linked-data/registry). The only real change to content has been the addition of the term `unstable`. This re-publication has been performed to allow the IRIs of each vocab term (skos:Concept) to resolve to both human-readable and machine-readable forms of content (HTML and RDF), using HTTP content negotiation.
@@ -28,7 +28,7 @@ Note that just like the original form of this vocabulary, while it is a SKOS voc
     vann:preferredNamespacePrefix "reg-status"@en ;
     dcterms:publisher <https://linked.data.gov.au/org/agldwg> ;
     rdfs:seeAlso <https://github.com/AGLDWG/reg-status> ;
-    dcterms:modified "2021-04-08"^^xsd:date ;
+    dcterms:modified "2021-11-07"^^xsd:date ;
     skos:changeNote "2020-06-27 NJC altered structure & metadata, not content, to conform to Vocab Publication Profile" , "2021-11-06 NJC changes IRI to reg-statuses; added unstable" ;
     dcterms:rights "(c) Commonwealth of Australia 2021"@en ;
     dcterms:created "2018-07-23"^^xsd:date ;
