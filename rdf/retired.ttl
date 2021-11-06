@@ -1,0 +1,19 @@
+---
+permalink: /retired.ttl
+---
+@prefix cs: <https://linked.data.gov.au/def/reg-status/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix reg:  <http://purl.org/linked-data/registry#> .
+@prefix : <https://linked.data.gov.au/def/reg-status/> .
+
+
+:retired a skos:Concept, reg:Status ;
+    owl:sameAs reg:statusRetired ;
+    skos:prefLabel "retired"@en;
+    skos:altlabel "withdrawn"@en;
+    skos:definition "An entry that has been withdrawn from use.'"@en;
+    skos:inScheme cs: ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :deprecated ;
+.

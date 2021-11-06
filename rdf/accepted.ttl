@@ -1,0 +1,19 @@
+---
+permalink: /accepted.ttl
+---
+@prefix cs: <https://linked.data.gov.au/def/reg-status/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix reg:  <http://purl.org/linked-data/registry#> .
+@prefix : <https://linked.data.gov.au/def/reg-status/> .
+
+
+:accepted a skos:Concept, reg:Status ;
+    owl:sameAs reg:statusAccepted ;
+    skos:prefLabel "accepted"@en;
+    skos:definition "An entry that has been accepted for use and is visible in the default register listing. Includes entries that have seen been retired or superseded."@en;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    rdfs:isDefinedBy cs: ;
+.

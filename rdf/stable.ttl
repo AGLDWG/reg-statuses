@@ -1,0 +1,18 @@
+---
+permalink: /stable.ttl
+---
+@prefix cs: <https://linked.data.gov.au/def/reg-status/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix reg:  <http://purl.org/linked-data/registry#> .
+@prefix : <https://linked.data.gov.au/def/reg-status/> .
+
+
+:stable a skos:Concept, reg:Status ;
+    owl:sameAs reg:statusStable ;
+    skos:prefLabel "stable"@en;
+    skos:definition "An entry that is seen as having a reasonable measure of stability, may be used to mark the full adoption of a previously 'experimental' entry."@en;
+    skos:inScheme cs: ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :valid ;
+.

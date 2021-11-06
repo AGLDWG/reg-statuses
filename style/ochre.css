@@ -4,7 +4,14 @@ body {
     color: rgb(133, 25, 2);
     background: url("https://raw.githubusercontent.com/AGLDWG/reg-status/master/style/comms_bg_grey.svg") top right no-repeat;
     text-align: center;
+    margin: 0;
 }
+
+header {
+    padding-top: 20px;
+    height: 150px;
+}
+
 #header {
     width: 900px;
     margin: 0 auto;
@@ -193,24 +200,23 @@ header {
 footer {
     background: url("https://raw.githubusercontent.com/AGLDWG/reg-status/master/style/comms_footer_bg.svg") top left no-repeat;
     background-color: #e4e4e4;
-    text-align:center;
     padding: 2em 0 2em 0;
     margin-top: 20px;
+    text-align: center;
+    width: 100%;
 }
-#footer-grid {
-    display: grid;
-    grid-template-columns: 80% 1fr;
-    margin: 0 auto;
+
+#footer_content {
+    grid-column: 2;
     text-align: left;
-    line-height: 2em;
-    font-size: smaller;
-    width: 900px;
+    margin: 0 auto;
+    width:900px;
 }
 
 #footer_content a {
     color: #616161;
     border-bottom: 1px solid currentcolor;
-    text-decoration: none;
+    text-decoration: none;    
 }
 
 table.alternating {
@@ -223,12 +229,16 @@ table.alternating td {
     padding: 5px;
 }
 
-table.alternating tr:nth-child(odd) {
-    background: #efefef;
-    border-top: 1px solid #D8D8D8;
+table.alternating tr:first-child th {
+    background: rgb(228, 228, 228);
 }
 
 table.alternating tr:nth-child(even) {
+    background: rgb(228, 228, 228);
+    border-top: 1px solid #D8D8D8;
+}
+
+table.alternating tr:nth-child(odd) {
     background: #ffffff;
     border-top: 1px solid #D8D8D8;
 }
