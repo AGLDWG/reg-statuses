@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Superceded
-permalink: /superceded
+title: Superseded
+permalink: /superseded
 ---
 # Concept
 

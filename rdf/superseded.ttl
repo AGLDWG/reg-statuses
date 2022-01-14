@@ -1,5 +1,5 @@
 ---
-permalink: /superceded.ttl
+permalink: /superseded.ttl
 ---
 @prefix cs: <https://linked.data.gov.au/def/reg-status/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
@@ -9,7 +9,7 @@ permalink: /superceded.ttl
 
 
 :superseded a skos:Concept, reg:Status ;
-    owl:sameAs reg:statusSuperceded ;
+    owl:sameAs reg:statusSuperseded ;
     skos:prefLabel "superseded"@en;
     skos:altlabel "replaced"@en;
     skos:definition "An entry that has been replaced by a new alternative which should be used instead."@en;

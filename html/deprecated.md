@@ -7,4 +7,4 @@ permalink: /deprecated
 
 ## {{ page.title }}
 
-An entry that has been Retired or Superceded or has become Unstable and is no longer to be used.
+An entry that has been Retired or Superseded or has become Unstable and is no longer to be used.

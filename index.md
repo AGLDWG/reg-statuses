@@ -24,7 +24,7 @@ Repository | <https://github.com/AGLDWG/reg-statuses>
 * [Accepted]({{ site.baseurl }}/accepted)
     * [Deprecated]({{ site.baseurl }}/deprecated)
         * [Retired]({{ site.baseurl }}/retired)
-        * [Superceded]({{ site.baseurl }}/superceded)
+        * [Superseded]({{ site.baseurl }}/superseded)
         * [Unstable]({{ site.baseurl }}/unstable)
     * [Valid]({{ site.baseurl }}/valid)
         * [Experimental]({{ site.baseurl }}/experimental)

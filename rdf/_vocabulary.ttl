@@ -81,7 +81,7 @@ reg:Status a owl:Class;
 :deprecated a skos:Concept, reg:Status ;
     owl:sameAs reg:statusDeprecated ;
     skos:prefLabel "deprecated"@en;
-    skos:definition "An entry that has been Retired or Superceded or has become Unstable and is no longer to be used."@en;
+    skos:definition "An entry that has been Retired or Superseded or has become Unstable and is no longer to be used."@en;
     skos:inScheme cs: ;
     rdfs:isDefinedBy cs: ;
     skos:broader :accepted ;
@@ -154,7 +154,7 @@ reg:Status a owl:Class;
 .
 
 :superseded a skos:Concept, reg:Status ;
-    owl:sameAs reg:statusSuperceded ;
+    owl:sameAs reg:statusSuperseded ;
     skos:prefLabel "superseded"@en;
     skos:altlabel "replaced"@en;
     skos:definition "An entry that has been replaced by a new alternative which should be used instead."@en;
