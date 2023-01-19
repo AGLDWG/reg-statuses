@@ -20,15 +20,17 @@ permalink: /.ttl
     skos:definition """This vocabulary is a re-published and only marginally changed version of the Registry Ontology's (http://epimorphics.com/public/vocabulary/Registry.html) *Status* vocabulary (online in RDF: http://purl.org/linked-data/registry). The only real change to content has been the addition of the term `unstable`. This re-publication has been performed to allow the IRIs of each vocab term (skos:Concept) to resolve to both human-readable and machine-readable forms of content (HTML and RDF), using HTTP content negotiation.
 
 Note that just like the original form of this vocabulary, while it is a SKOS vocabulary implemented as a single skos:ConceptScheme, it is also an OWL Ontology and that each *Status* is both a skos:Concept and a reg:Status individual."""@en ;
-    owl:versionIRI <https://linked.data.gov.au/def/reg-status/1.0> ;
-    owl:versionInfo "1.0"@en ;
+    owl:versionIRI <https://linked.data.gov.au/def/reg-status/2.0> ;
+    owl:versionInfo 
+        "2.0 - 2023-01 - additon of Concepts addition & original, as per updated Registry Item status codes"@en ,
+        "1.0 - 2018-06 - as per Registry Ontology original"@en ;
     dcterms:contributor <https://orcid.org/0000-0002-8742-7730>;
     vann:preferredNamespaceUri "https://linked.data.gov.au/def/reg-status/"^^xsd:string ;
     dcterms:creator <https://www.epimorphics.com> ;
     vann:preferredNamespacePrefix "reg-status"@en ;
     dcterms:publisher <https://linked.data.gov.au/org/agldwg> ;
     rdfs:seeAlso <https://github.com/AGLDWG/reg-status> ;
-    dcterms:modified "2021-11-07"^^xsd:date ;
+    dcterms:modified "2023-01-19"^^xsd:date ;
     skos:changeNote "2020-06-27 NJC altered structure & metadata, not content, to conform to Vocab Publication Profile" , "2021-11-06 NJC changes IRI to reg-statuses; added unstable" ;
     dcterms:rights "(c) Commonwealth of Australia 2021"@en ;
     dcterms:created "2018-07-23"^^xsd:date ;
@@ -78,6 +80,14 @@ reg:Status a owl:Class;
     rdfs:isDefinedBy cs: ;
 .
 
+:addition a skos:Concept, reg:Status ;
+    skos:prefLabel "addition"@en;
+    skos:definition "The item's status is stable and was supplied to the registry after initial creation"@en;
+    skos:inScheme cs: ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :stable ;
+.
+
 :deprecated a skos:Concept, reg:Status ;
     owl:sameAs reg:statusDeprecated ;
     skos:prefLabel "deprecated"@en;
@@ -114,6 +124,14 @@ reg:Status a owl:Class;
     skos:inScheme cs: ;
     skos:topConceptOf cs: ;
     rdfs:isDefinedBy cs: ;
+.
+
+:original a skos:Concept, reg:Status ;
+    skos:prefLabel "stable"@en;
+    skos:definition "The item's status is stable and was supplied to the registry after initial creation."@en;
+    skos:inScheme cs: ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :stable ;
 .
 
 :reserved a skos:Concept, reg:Status ;

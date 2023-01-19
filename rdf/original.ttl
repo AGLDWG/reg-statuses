@@ -1,0 +1,17 @@
+---
+permalink: /original.ttl
+---
+@prefix cs: <https://linked.data.gov.au/def/reg-status/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix reg:  <http://purl.org/linked-data/registry#> .
+@prefix : <https://linked.data.gov.au/def/reg-status/> .
+
+
+:original a skos:Concept, reg:Status ;
+    skos:prefLabel "stable"@en;
+    skos:definition "The item's status is stable and was supplied to the registry after initial creation."@en;
+    skos:inScheme cs: ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :stable ;
+.
