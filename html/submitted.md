@@ -5,6 +5,8 @@ permalink: /submitted
 ---
 # Concept
 
-## {{ page.title }}
+## Submitted
 
-A proposed entry which is not yet approved for use for use.
+`https://linked.data.gov.au/def/reg-statuses/submitted`
+
+A proposed entry which is not yet approved for use.

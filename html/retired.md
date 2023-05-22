@@ -5,7 +5,9 @@ permalink: /retired
 ---
 # Concept
 
-## {{ page.title }}
+## Retired
+
+`https://linked.data.gov.au/def/reg-statuses/retired`
 
 An entry that has been withdrawn from use.
 

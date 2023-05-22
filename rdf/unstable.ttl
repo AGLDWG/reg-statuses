@@ -1,14 +1,15 @@
 ---
 permalink: /unstable.ttl
 ---
-@prefix cs: <https://linked.data.gov.au/def/reg-status/> .
-@prefix owl:  <http://www.w3.org/2002/07/owl#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix reg:  <http://purl.org/linked-data/registry#> .
-@prefix : <https://linked.data.gov.au/def/reg-status/> .
+PREFIX cs: <https://linked.data.gov.au/def/reg-status/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX reg:  <http://purl.org/linked-data/registry#>
+PREFIX : <https://linked.data.gov.au/def/reg-status/>
 
 
-:unstable a skos:Concept, reg:Status ;
+:unstable
+    a skos:Concept, reg:Status ;
     rdfs:isDefinedBy cs: ;
     skos:prefLabel "stable"@en;
     skos:definition "An entry that is not seen as having a reasonable measure of stability. This status is expected to be allocated to entries that were once Stable but have become Unstable, due to a management or technical mishap, rather than being allocated to resources before they become Stable. Those resources should be allocated Experimental."@en;

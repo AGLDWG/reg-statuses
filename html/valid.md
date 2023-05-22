@@ -5,6 +5,8 @@ permalink: /valid
 ---
 # Concept
 
-## {{ page.title }}
+## Valid
+
+`https://linked.data.gov.au/def/reg-statuses/valid`
 
 An entry that has been accepted into the register and is deemed fit for use.

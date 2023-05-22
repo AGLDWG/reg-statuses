@@ -1,14 +1,15 @@
 ---
 permalink: /retired.ttl
 ---
-@prefix cs: <https://linked.data.gov.au/def/reg-status/> .
-@prefix owl:  <http://www.w3.org/2002/07/owl#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix reg:  <http://purl.org/linked-data/registry#> .
-@prefix : <https://linked.data.gov.au/def/reg-status/> .
+PREFIX cs: <https://linked.data.gov.au/def/reg-status/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX reg:  <http://purl.org/linked-data/registry#>
+PREFIX : <https://linked.data.gov.au/def/reg-status/>
 
 
-:retired a skos:Concept, reg:Status ;
+:retired
+    a skos:Concept, reg:Status ;
     owl:sameAs reg:statusRetired ;
     skos:prefLabel "retired"@en;
     skos:altlabel "withdrawn"@en;

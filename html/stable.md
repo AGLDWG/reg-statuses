@@ -5,6 +5,8 @@ permalink: /stable
 ---
 # Concept
 
-## {{ page.title }}
+## Stable
+
+`https://linked.data.gov.au/def/reg-statuses/stable`
 
 An entry that is seen as having a reasonable measure of stability, may be used to mark the full adoption of a previously [Experimental]({{ site.baseurl }}/experimental) entry.
