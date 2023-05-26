@@ -24,7 +24,7 @@ Note that just like the original form of this vocabulary, while it is a SKOS voc
     owl:versionInfo 
         "2.1 - 2023-05 - added colours" ,
         "2.0 - 2023-01 - addition of Concepts addition & original, as per updated Registry Item status codes" ,
-        "1.2 - 2021-11 - changes IRI to reg-statuses; added unstable" ;
+        "1.2 - 2021-11 - changes IRI to reg-statuses; added unstable" ,
         "1.1 - 2020-06 - altered structure & metadata, not content, to conform to Vocab Publication Profile" ,
         "1.0 - 2018-06 - as per Registry Ontology original" ;
     dcterms:contributor <https://orcid.org/0000-0002-8742-7730>;
