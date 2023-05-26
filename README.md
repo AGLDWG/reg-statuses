@@ -12,6 +12,6 @@ This repository is licensed under Creative Commons 4.0 International. See the [L
 ## Contacts
 Contributor:  
 **Nicholas J. Car**  
-*Data Systems Architect*  
-SURROUND Australia Pty Ltd.  
-<nicholas.car@surroundaustralia.com>  
+*Data Architect*  
+[KurrawongAI](https://kurrawong.ai)
+<nick@kurrawong.ai>  

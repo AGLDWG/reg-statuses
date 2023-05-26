@@ -10,3 +10,5 @@ permalink: /addition
 `https://linked.data.gov.au/def/reg-statuses/accepted`
 
 The item's status is stable and was supplied to the registry after initial creation.
+
+<div style="background-color: #4ac11b; display: block;">Colour: #4ac11b</div>

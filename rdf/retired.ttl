@@ -3,6 +3,7 @@ permalink: /retired.ttl
 ---
 PREFIX cs: <https://linked.data.gov.au/def/reg-status/>
 PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX sdo: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX reg:  <http://purl.org/linked-data/registry#>
 PREFIX : <https://linked.data.gov.au/def/reg-status/>
@@ -17,4 +18,5 @@ PREFIX : <https://linked.data.gov.au/def/reg-status/>
     skos:inScheme cs: ;
     rdfs:isDefinedBy cs: ;
     skos:broader :deprecated ;
+    sdo:color "#ad5b24" ;
 .
