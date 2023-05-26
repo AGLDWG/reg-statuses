@@ -1,5 +1,5 @@
 ---
-permalink: /_vocabulary.ttl
+permalink: /vocabulary.ttl
 ---
 PREFIX cs: <https://linked.data.gov.au/def/reg-statuses>
 PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
