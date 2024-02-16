@@ -36,10 +36,10 @@
         <div id="alt" style="float:right; display:block; padding: 5px;">
             <h3>Alternate views</h3>
             <p>Other formats:</p>
-            {% if absolute_url == 'https://agldwg.github.io/reg-statuses/' %}
+            {% if page.title == 'Vocabulary' %}
                 <ul><li><a href="vocabulary.ttl">RDF (turtle)</a></li></ul>
             {% else %}
-                <ul><li><a href="{{ site.baseurl }}{{ page.url }}.ttl">RDF (turtle) ({{absolute_url}})</a></li></ul>
+                <ul><li><a href="{{ site.baseurl }}{{ page.url }}.ttl">RDF (turtle) ({{page.title}})</a></li></ul>
             {% endif %}
         </div>
 
