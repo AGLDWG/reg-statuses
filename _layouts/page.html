@@ -36,11 +36,7 @@
         <div id="alt" style="float:right; display:block; padding: 5px;">
             <h3>Alternate views</h3>
             <p>Other formats:</p>
-            {% if page.title == 'Vocabulary' %}
-                <ul><li><a href="vocabulary.ttl">RDF (turtle)</a></li></ul>
-            {% else %}
-                <ul><li><a href="{{ site.baseurl }}{{ page.url }}.ttl">RDF (turtle) ({{page.title}})</a></li></ul>
-            {% endif %}
+	    <ul><li><a href="{% if page.title == 'Vocabulary' %}vocabulary.ttl{% else %}{{ site.baseurl }}{{ page.url }}.ttl{% endif %}">RDF (turtle)</a></li></ul>
         </div>
 
         <div id="content">
