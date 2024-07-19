@@ -11,7 +11,7 @@ PREFIX : <https://linked.data.gov.au/def/reg-status/>
 
 :original
     a skos:Concept, reg:Status ;
-    skos:prefLabel "stable"@en;
+    skos:prefLabel "original"@en;
     skos:definition "The item's status is stable and was supplied to the registry after initial creation."@en;
     skos:inScheme cs: ;
     rdfs:isDefinedBy cs: ;
