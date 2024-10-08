@@ -12,7 +12,7 @@ PREFIX : <https://linked.data.gov.au/def/reg-status/>
 :unstable
     a skos:Concept, reg:Status ;
     rdfs:isDefinedBy cs: ;
-    skos:prefLabel "stable"@en;
+    skos:prefLabel "unstable"@en;
     skos:definition "An entry that is not seen as having a reasonable measure of stability. This status is expected to be allocated to entries that were once Stable but have become Unstable, due to a management or technical mishap, rather than being allocated to resources before they become Stable. Those resources should be allocated Experimental."@en;
     skos:inScheme cs: ;
     skos:broader :deprecated ;
