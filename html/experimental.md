@@ -7,7 +7,7 @@ permalink: /experimental
 
 ## {{ page.title }}
 
-`https://linked.data.gov.au/def/reg-statuses/accepted`
+`https://linked.data.gov.au/def/reg-statuses/experimental`
 
 An entry that has been accepted into the register temporarily and may be subject to change or withdrawal.
 

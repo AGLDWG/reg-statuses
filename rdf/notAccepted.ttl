@@ -12,7 +12,7 @@ PREFIX : <https://linked.data.gov.au/def/reg-status/>
 :notAccepted
     a skos:Concept, reg:Status ;
     owl:sameAs reg:statusNotAccepted ;
-    skos:prefLabel "notAccepted"@en;
+    skos:prefLabel "not accepted"@en;
     skos:definition "An entry that should not be visible in the default register listing."@en;
     skos:topConceptOf cs: ;
     skos:inScheme cs: ;

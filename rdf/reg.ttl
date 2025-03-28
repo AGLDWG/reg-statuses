@@ -21,7 +21,8 @@ PREFIX : <https://linked.data.gov.au/def/reg-statuses/>
 
 Note that just like the original form of this vocabulary, while it is a SKOS vocabulary implemented as a single skos:ConceptScheme, it is also an OWL Ontology and that each *Status* is both a skos:Concept and a reg:Status individual."""@en ;
     owl:versionIRI <https://linked.data.gov.au/def/reg-status/2.2> ;
-    owl:versionInfo 
+    owl:versionInfo
+        "2.3 - 2025-03 - minor errors in HTML fixed" ,
         "2.2 - 2024-07 - fixed incorrect prefLabels for unstable & original in the RDF that used 'stable'. Also fixed preferred namespace URI. Updated Nicholas' affiliation to ANU" ,
         "2.1 - 2023-05 - added colours" ,
         "2.0 - 2023-01 - addition of Concepts addition & original, as per updated Registry Item status codes" ,
@@ -34,7 +35,7 @@ Note that just like the original form of this vocabulary, while it is a SKOS voc
     vann:preferredNamespacePrefix "reg-status"@en ;
     dcterms:publisher <https://linked.data.gov.au/org/agldwg> ;
     rdfs:seeAlso <https://github.com/AGLDWG/reg-status> ;
-    dcterms:modified "2024-07-19"^^xsd:date ;
+    dcterms:modified "2025-03-28"^^xsd:date ;
     dcterms:rights "(c) Commonwealth of Australia 2024"@en ;
     dcterms:created "2018-07-23"^^xsd:date ;
     dcterms:source <http://purl.org/linked-data/registry> ;
