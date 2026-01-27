@@ -19,9 +19,11 @@ PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
     skos:definition """This vocabulary is a re-published and only marginally changed version of the Registry Ontology's (http://epimorphics.com/public/vocabulary/Registry.html) *Status* vocabulary (online in RDF: http://purl.org/linked-data/registry). The only real change to content has been the addition of the term `unstable`. This re-publication has been performed to allow the IRIs of each vocab term (skos:Concept) to resolve to both human-readable and machine-readable forms of content (HTML and RDF), using HTTP content negotiation.
 
 Note that just like the original form of this vocabulary, while it is a SKOS vocabulary implemented as a single skos:ConceptScheme, it is also an OWL Ontology and that each *Status* is both a skos:Concept and a reg:Status individual."""@en ;
-    owl:versionIRI <https://linked.data.gov.au/def/reg-status/2.2> ;
+    owl:versionIRI <https://linked.data.gov.au/def/reg-status/2.5> ;
     owl:versionInfo
-        """2.4 - 2026-01 - added scope notes to be used for use messages
+        """2.5 - 2026-01 - Differentiated Addition & Original by definition changes
+
+2.4 - 2026-01 - added scope notes to be used for use messages
 
 2.3 - 2025-03 - minor errors in HTML fixed
 
@@ -49,6 +51,7 @@ Note that just like the original form of this vocabulary, while it is a SKOS voc
         :accepted ,
         :notAccepted ;
     skos:historyNote "This vocabulary was derived from the Registry Ontology by Epimorphics which itself was derived from ISO19135" ;
+    schema:version "2.5" ;
     vann:preferredNamespacePrefix "rstatus"@en ;
     vann:preferredNamespaceUri "https://linked.data.gov.au/def/reg-statuses/"^^xsd:string ;
 .
@@ -98,7 +101,7 @@ reg:Status a owl:Class;
 
 :addition a skos:Concept, reg:Status ;
     skos:prefLabel "addition"@en;
-    skos:definition "The item's status is stable and was supplied to the registry after initial creation"@en;
+    skos:definition "The item's status is stable and was supplied to the register after its creation"@en;
     skos:inScheme cs: ;
     skos:broader :stable ;
     skos:scopeNote "Stable and usable. An addition to original register issue" ;
