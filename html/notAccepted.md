@@ -12,3 +12,5 @@ permalink: /notAccepted
 An entry that should not be visible in the default register listing.
 
 <div style="background-color: #ea9e2c; display: block;">Colour: #ea9e2c</div>
+
+**Scope Note**: Not approved for use

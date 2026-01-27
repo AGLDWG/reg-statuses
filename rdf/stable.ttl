@@ -3,7 +3,7 @@ permalink: /stable.ttl
 ---
 PREFIX cs: <https://linked.data.gov.au/def/reg-status/>
 PREFIX owl:  <http://www.w3.org/2002/07/owl#>
-PREFIX sdo: <https://schema.org/>
+PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX reg:  <http://purl.org/linked-data/registry#>
 PREFIX : <https://linked.data.gov.au/def/reg-status/>
@@ -11,11 +11,12 @@ PREFIX : <https://linked.data.gov.au/def/reg-status/>
 
 :stable
     a skos:Concept, reg:Status ;
+    rdfs:isDefinedBy cs: ;
     owl:sameAs reg:statusStable ;
     skos:prefLabel "stable"@en;
     skos:definition "An entry that is seen as having a reasonable measure of stability, may be used to mark the full adoption of a previously 'experimental' entry."@en;
     skos:inScheme cs: ;
-    rdfs:isDefinedBy cs: ;
     skos:broader :valid ;
-    sdo:color "#2e8c09" ;
+    skos:scopeNote "Approved for use and available" ;
+    schema:color "#2e8c09" ;
 .

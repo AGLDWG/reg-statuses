@@ -3,7 +3,7 @@ permalink: /experimental.ttl
 ---
 PREFIX cs: <https://linked.data.gov.au/def/reg-status/>
 PREFIX owl:  <http://www.w3.org/2002/07/owl#>
-PREFIX sdo: <https://schema.org/>
+PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX reg:  <http://purl.org/linked-data/registry#>
 PREFIX : <https://linked.data.gov.au/def/reg-status/>
@@ -11,12 +11,13 @@ PREFIX : <https://linked.data.gov.au/def/reg-status/>
 
 :experimental
     a skos:Concept, reg:Status ;
+    rdfs:isDefinedBy cs: ;
     owl:sameAs reg:statusExperimental ;
     skos:prefLabel "experimental"@en;
     skos:altlabel "provisional"@en;
     skos:definition "An entry that has been accepted into the register temporarily and may be subject to change or withdrawal."@en;
     skos:inScheme cs: ;
-    rdfs:isDefinedBy cs: ;
     skos:broader :valid ;
-    sdo:color "#eae72c" ;
+    skos:scopeNote "Approved for testing use only" ;
+    schema:color "#eae72c" ;
 .

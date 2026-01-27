@@ -12,3 +12,5 @@ permalink: /reserved
 A reserved entry allocated for some as yet undetermined future use.
 
 <div style="background-color: #9b8d79; display: block;">Colour: #9b8d79</div>
+
+**Scope Note**: Placeholder: not yet approved for use

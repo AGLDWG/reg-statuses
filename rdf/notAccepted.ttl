@@ -3,7 +3,7 @@ permalink: /notAccepted.ttl
 ---
 PREFIX cs: <https://linked.data.gov.au/def/reg-status/>
 PREFIX owl:  <http://www.w3.org/2002/07/owl#>
-PREFIX sdo: <https://schema.org/>
+PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX reg:  <http://purl.org/linked-data/registry#>
 PREFIX : <https://linked.data.gov.au/def/reg-status/>
@@ -11,12 +11,13 @@ PREFIX : <https://linked.data.gov.au/def/reg-status/>
 
 :notAccepted
     a skos:Concept, reg:Status ;
+    rdfs:isDefinedBy cs: ;
     owl:sameAs reg:statusNotAccepted ;
     skos:prefLabel "not accepted"@en;
     skos:definition "An entry that should not be visible in the default register listing."@en;
     skos:topConceptOf cs: ;
     skos:inScheme cs: ;
     skos:topConceptOf cs: ;
-    rdfs:isDefinedBy cs: ;
-    sdo:color "#ea9e2c" ;
+    skos:scopeNote "Not approved for use" ;
+    schema:color "#ea9e2c" ;
 .

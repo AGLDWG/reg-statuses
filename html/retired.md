@@ -14,3 +14,5 @@ An entry that has been withdrawn from use.
 **Alternative Label**: withdrawn
 
 <div style="background-color: #ad5b24; display: block;">Colour: #ad5b24</div>
+
+**Scope Note**: Previously approved for use but no longer

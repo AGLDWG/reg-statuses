@@ -12,3 +12,5 @@ permalink: /submitted
 A proposed entry which is not yet approved for use.
 
 <div style="background-color: #248bad; display: block;">Colour: #248bad</div>
+
+**Scope Note**: Proposed for addition, not approved, not available for use

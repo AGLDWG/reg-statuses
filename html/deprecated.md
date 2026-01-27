@@ -12,3 +12,5 @@ permalink: /deprecated
 An entry that has been Retired or Superseded or has become Unstable and is no longer to be used.
 
 <div style="background-color: #a86a0d; display: block;">Colour: #a86a0d</div>
+
+**Scope Note**: Approved for use but not available

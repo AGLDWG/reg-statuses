@@ -12,3 +12,5 @@ permalink: /valid
 An entry that has been accepted into the register and is deemed fit for use.
 
 <div style="background-color: #36a80d; display: block;">Colour: #36a80d</div>
+
+**Scope Note**: Approved for use but may be experimental

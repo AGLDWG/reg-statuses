@@ -3,7 +3,7 @@ permalink: /addition.ttl
 ---
 PREFIX cs: <https://linked.data.gov.au/def/reg-status/>
 PREFIX owl:  <http://www.w3.org/2002/07/owl#>
-PREFIX sdo: <https://schema.org/>
+PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX reg:  <http://purl.org/linked-data/registry#>
 PREFIX : <https://linked.data.gov.au/def/reg-status/>
@@ -11,10 +11,11 @@ PREFIX : <https://linked.data.gov.au/def/reg-status/>
 
 :addition
     a skos:Concept, reg:Status ;
+    rdfs:isDefinedBy cs: ;
     skos:prefLabel "addition"@en;
     skos:definition "The item's status is stable and was supplied to the registry after initial creation"@en;
     skos:inScheme cs: ;
-    rdfs:isDefinedBy cs: ;
     skos:broader :stable ;
-    sdo:color "#4ac11b" ;
+    skos:scopeNote "Stable and usable. An addition to original register issue" ;
+    schema:color "#4ac11b" ;
 .

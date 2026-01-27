@@ -14,3 +14,5 @@ An entry that has been accepted into the register temporarily and may be subject
 **Alternative Label**: provisional
 
 <div style="background-color: #eae72c; display: block;">Colour: #eae72c</div>
+
+**Scope Note**: Approved for testing use only

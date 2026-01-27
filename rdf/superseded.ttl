@@ -3,7 +3,7 @@ permalink: /superseded.ttl
 ---
 PREFIX cs: <https://linked.data.gov.au/def/reg-status/>
 PREFIX owl:  <http://www.w3.org/2002/07/owl#>
-PREFIX sdo: <https://schema.org/>
+PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX reg:  <http://purl.org/linked-data/registry#>
 PREFIX : <https://linked.data.gov.au/def/reg-status/>
@@ -11,12 +11,13 @@ PREFIX : <https://linked.data.gov.au/def/reg-status/>
 
 :superseded
     a skos:Concept, reg:Status ;
+    rdfs:isDefinedBy cs: ;
     owl:sameAs reg:statusSuperseded ;
     skos:prefLabel "superseded"@en;
     skos:altlabel "replaced"@en;
     skos:definition "An entry that has been replaced by a new alternative which should be used instead."@en;
     skos:inScheme cs: ;
-    rdfs:isDefinedBy cs: ;
     skos:broader :deprecated ;
-    sdo:color "#ad7624" ;
+    skos:scopeNote "Previously approved for use but now replaced" ;
+    schema:color "#ad7624" ;
 .

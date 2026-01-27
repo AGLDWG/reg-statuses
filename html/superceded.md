@@ -14,3 +14,5 @@ An entry that has been replaced by a new alternative which should be used instea
 **Alternative Label**: replaced
 
 <div style="background-color: #ad7624; display: block;">Colour: #ad7624</div>
+
+**Scope Note**: Previously approved for use but now replaced
